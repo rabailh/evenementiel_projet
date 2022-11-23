@@ -8,16 +8,16 @@ L'entièreté du projet à été conçu et développé par Raphaël BAILHET ains
 
 ## Cahier des charges
 
-- [] En Équipe de 2 à 4 personnes
-- [] Projet dans le language Java 
-- [] Le projet est hébergé par un serveur git
-- [] Contient un Main ainsi qu'au moins 5 autres classes 
-- [] Le projet contient un branche de dev, une de stage, et un de prod 
-- [] La branche de dev doit contenir au moins 5 commits, faits par deux personnes différentes, ainsi que 2 merges 
-- [] Il doit y avoir des tests unitaires pour au moins 2 des classes du projet
-- [] Le projet doit avoir un githook pour le commit et un pour le pre-push
-- [] Les hooks du projet doivent être mis en place dès le clonage du projet
-- [] Une liste de ces hooks avec une description de leur action doit être lisible sur le readme du git
+- [ ] En Équipe de 2 à 4 personnes
+- [ ] Projet dans le language Java 
+- [ ] Le projet est hébergé par un serveur git
+- [ ] Contient un Main ainsi qu'au moins 5 autres classes 
+- [ ] Le projet contient un branche de dev, une de stage, et un de prod 
+- [ ] La branche de dev doit contenir au moins 5 commits, faits par deux personnes différentes, ainsi que 2 merges 
+- [ ] Il doit y avoir des tests unitaires pour au moins 2 des classes du projet
+- [ ] Le projet doit avoir un githook pour le commit et un pour le pre-push
+- [ ] Les hooks du projet doivent être mis en place dès le clonage du projet
+- [ ] Une liste de ces hooks avec une description de leur action doit être lisible sur le readme du git
 
 ***
 
