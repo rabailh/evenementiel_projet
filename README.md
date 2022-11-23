@@ -16,7 +16,6 @@ L'entièreté du projet à été conçu et développé par Raphaël BAILHET ains
 - [ ] La branche de dev doit contenir au moins 5 commits, faits par deux personnes différentes, ainsi que 2 merges 
 - [ ] Il doit y avoir des tests unitaires pour au moins 2 des classes du projet
 - [ ] Le projet doit avoir un githook pour le commit et un pour le pre-push
-- [ ] Les hooks du projet doivent être mis en place dès le clonage du projet
 - [ ] Une liste de ces hooks avec une description de leur action doit être lisible sur le readme du git
 
 ***
@@ -50,3 +49,8 @@ Dans ce projet, il y a deux githooks mis en place.
 - L'un lors du commit qui vérifie la validité du message du commit. Il doit être de la forme décrite précédement. 
 
 - Le second lors du prepush qui vérifie avant de push si il y a du contenu (des commits) à pousser.
+
+A chaque clonage du projet, il faut executer la commande suivante : 
+```git config core.hooksPath .githooks```
+
+Git ne permet pas d'automatiser l'éxécution d'une commande directement après un git clone.
