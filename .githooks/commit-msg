@@ -1,0 +1,13 @@
+#!/bin/bash
+regex='^[0-9]+ \- ( *[a-zA-Z.]+)'
+
+
+
+commit_message=$(cat "$1")
+
+if [[ $commit_message =~ $regex ]]; then
+   exit 0
+fi
+
+echo -e "Le message de commit n'est pas conforme"
+exit 1

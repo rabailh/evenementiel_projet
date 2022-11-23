@@ -1,0 +1,11 @@
+#!/bin/sh
+
+# Check if we actually have commits to push
+commits=`git log @{u}.. --oneline | wc -l`
+
+if [ $commits -gt 0 ]; then
+    exit 0
+fi
+
+echo "Il n'y a aucun commit à pousser"
+exit 1
