@@ -31,9 +31,7 @@ Les branches principales
 
 Les branches concernant les évolutions se présenter sous la forme suivante ;
 
-X - message de commit
-
-X étant le numéro de la tâche
+NuméroDeTâche.0
 
 exemple :
 ```
@@ -46,7 +44,7 @@ exemple :
 
 Dans ce projet, il y a deux githooks mis en place. 
 
-- L'un lors du commit qui vérifie la validité du message du commit. Il doit être de la forme décrite précédement. 
+- L'un lors du commit qui vérifie la validité du message du commit. Il doit être de la forme : 'NuméroDeTâche - message de commit'. 
 
 - Le second lors du prepush qui vérifie avant de push si il y a du contenu (des commits) à pousser.
 
@@ -54,3 +52,52 @@ A chaque clonage du projet, il faut executer la commande suivante :
 ```git config core.hooksPath .githooks```
 
 Git ne permet pas d'automatiser l'éxécution d'une commande directement après un git clone.
+
+
+## Les tâches 
+
+- US 1.0 Init projet : 
+	- créer projet
+	- mettre en place branche de prod
+	- mettre en place branche de stage
+	- mettre en place branche de dev
+	- créer le readme qui doit contenir description gitflow
+
+	
+- US 2.0 Init hooks : 
+	- mettre en place les hooks
+	- mettre à jour le readme description hooks 
+
+	
+- US 3.0 Créer les Enum
+	- Enum Commune
+	- Enum Evenement
+
+- US 4.0 Commune Init
+	- Init classe abstraite commune attr + sign methodes
+	- Init classe village attr+ sign méthodes
+	- Init classe ville attr+ sign méthodes
+	- Init classe Megalopole attr+ sign méthodes
+
+- US 5.0 Implem classe abstraite commune + TU
+
+- US 6.0 Implem classe village + TU
+	
+- US 7.0 Implem classe ville + TU
+	
+- US 8.0 Implem classe Megalopole + TU
+
+- US 9.0 Classe Personne
+	- creation classe
+	- implem méthodes
+	- TU
+	
+- US 10.0 Classe evenement	
+	- creation classe
+	- implem méthodes
+	- TU	
+
+- US 11.0 Main
+	- creation d'un scenario d'exe
+	- implem du scenario
+	- Test fonctionnel 
