@@ -14,6 +14,5 @@ public class Village extends Commune{
     @Override
     public Boolean VerifierPossibilitéEvenement(TypeEvenement evenement){
         return (TypeCommune.VILLAGE.nbHabitants > evenement.nbPersonneEvenement);
-
     }
 }
