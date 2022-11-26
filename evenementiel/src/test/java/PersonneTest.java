@@ -1,6 +1,11 @@
+import bailhet.boisson.evenementiel.Evenement;
+import bailhet.boisson.evenementiel.Megalopole;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 import bailhet.boisson.evenementiel.Personne;
+import bailhet.boisson.evenementiel.TypeEvenement;
 import bailhet.boisson.evenementiel.Village;
 import java.util.ArrayList;
 
@@ -8,9 +13,9 @@ import java.util.ArrayList;
  *
  * @author Raphael BAILHET & Manon BOISSON
  */
-public class PatientTest {
+public class PersonneTest {
     
-    public PatientTest() {
+    public PersonneTest() {
     }
 
      @Test
@@ -34,7 +39,14 @@ public class PatientTest {
      }
      
      @Test
-     public void participerTest() {
-        //TODO
+     public void participerTest(){
+        Personne jonnhy = new Personne("Hall", "Jonny", 49);
+        Personne jonna = new Personne("Halle", "Jonna", 12);
+        Megalopole MarlinLesMoulineaux = new Megalopole("Marlin-Les-Moulineaux");
+        Evenement concert = new Evenement(jonnhy, TypeEvenement.CONCERT, MarlinLesMoulineaux);
+        
+        assertFalse(jonnhy.participationEvenement(concert));
+        assertTrue(jonna.participationEvenement(concert));
+        assertFalse(jonna.participationEvenement(concert));
      }
 }

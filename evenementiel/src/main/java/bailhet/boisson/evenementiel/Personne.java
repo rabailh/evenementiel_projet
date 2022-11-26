@@ -22,7 +22,12 @@ public class Personne {
         commune.habitants.add(this);
     }
         
-//    public void participationEvenement(Evenement e){
-//     TODO + TU   
-//    }
+    public Boolean participationEvenement(Evenement e){
+      if(e.listeDeParticipants.size() < e.type.nbPersonneEvenement-1 && !e.listeDeParticipants.contains(this)){  
+        e.listeDeParticipants.add(this);
+        return true;
+      } else {
+          return false;
+      }
+    }
 }
