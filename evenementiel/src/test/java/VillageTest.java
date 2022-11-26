@@ -1,5 +1,3 @@
-package test;
-
 import bailhet.boisson.evenementiel.TypeEvenement;
 import bailhet.boisson.evenementiel.Village;
 import org.junit.jupiter.api.Test;
